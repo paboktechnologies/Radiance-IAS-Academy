@@ -1,0 +1,358 @@
+
+/* Main Page */
+.admin-popups-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+/* Header */
+.admin-popups-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.admin-popups-header h1 {
+    color: #8B0000;
+    font-size: 28px;
+    margin: 0 0 8px;
+}
+
+.admin-popups-header p {
+    color: #777;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Back Button */
+.admin-popup-back-btn {
+    background: #8B0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.admin-popup-back-btn:hover {
+    background: #C62828;
+}
+
+/* Add Popup Form */
+.admin-add-popup {
+    background: #FFFFFF;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+}
+
+.admin-add-popup h2 {
+    color: #8B0000;
+    font-size: 21px;
+    margin: 0 0 25px;
+    padding-bottom: 13px;
+    border-bottom: 2px solid #FFCDD2;
+}
+
+/* Form Group */
+.admin-popup-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.admin-popup-form-group label,
+.admin-popup-preview label {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.admin-popup-form-group input,
+.admin-popup-form-group textarea,
+.admin-popup-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    background: #FFFFFF;
+    transition: 0.3s;
+}
+
+.admin-popup-form-group input:focus,
+.admin-popup-form-group textarea:focus,
+.admin-popup-form-group select:focus {
+    border-color: #C62828;
+    box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.1);
+}
+
+.admin-popup-form-group textarea {
+    resize: vertical;
+}
+
+.admin-popup-form-group small {
+    color: #777777;
+    font-size: 12px;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+/* Image Preview */
+.admin-popup-preview {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-popup-preview img {
+    width: 100%;
+    max-width: 450px;
+    max-height: 280px;
+    object-fit: contain;
+    background: #FFF5F5;
+    border: 1px solid #FFCDD2;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Date Row */
+.admin-popup-date-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Form Buttons */
+.admin-popup-form-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.admin-add-popup-btn {
+    background: #8B0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-add-popup-btn:hover {
+    background: #C62828;
+}
+
+.admin-add-popup-btn:disabled {
+    background: #999999;
+    cursor: not-allowed;
+}
+
+.admin-popup-cancel-btn {
+    background: #EEEEEE;
+    color: #333333;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-popup-cancel-btn:hover {
+    background: #DDDDDD;
+}
+
+/* Error and Success */
+.admin-popups-error {
+    color: #B00020;
+    background: #FFEBEE;
+    border: 1px solid #FFCDD2;
+    padding: 11px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.admin-popups-success {
+    color: #1B5E20;
+    background: #E8F5E9;
+    border: 1px solid #A5D6A7;
+    padding: 11px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* Popup List */
+.admin-popup-list {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+.admin-popup-list h2 {
+    color: #8B0000;
+    font-size: 21px;
+    margin: 0 0 20px;
+}
+
+.admin-popups-empty {
+    color: #777777;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Table Wrapper */
+.admin-popups-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table */
+.admin-popups-table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+}
+
+.admin-popups-table th {
+    background: #8B0000;
+    color: #FFFFFF;
+    padding: 14px 12px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-popups-table td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #EEEEEE;
+    color: #444444;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.admin-popups-table tbody tr:hover {
+    background: #FFF5F5;
+}
+
+/* Table Image */
+.admin-popup-table-image {
+    width: 85px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #FFCDD2;
+    background: #FFF5F5;
+}
+
+/* Status Buttons */
+.popup-status-active,
+.popup-status-inactive {
+    border: none;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.popup-status-active {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.popup-status-inactive {
+    background: #FFEBEE;
+    color: #B71C1C;
+}
+
+/* Action Buttons */
+.admin-popup-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.admin-popup-edit-btn,
+.admin-popup-delete-btn {
+    border: none;
+    padding: 8px 13px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-popup-edit-btn {
+    background: #FFCDD2;
+    color: #8B0000;
+}
+
+.admin-popup-edit-btn:hover {
+    background: #EF9A9A;
+}
+
+.admin-popup-delete-btn {
+    background: #8B0000;
+    color: #FFFFFF;
+}
+
+.admin-popup-delete-btn:hover {
+    background: #C62828;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-popups-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-add-popup,
+    .admin-popup-list {
+        padding: 18px;
+    }
+
+    .admin-popup-date-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .admin-popups-header h1 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-popup-back-btn {
+        width: 100%;
+    }
+
+    .admin-popup-form-buttons {
+        flex-direction: column;
+    }
+
+    .admin-add-popup-btn,
+    .admin-popup-cancel-btn {
+        width: 100%;
+    }
+}

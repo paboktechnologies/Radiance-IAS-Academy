@@ -1,0 +1,348 @@
+
+/* Main Course Details Page */
+.course-details-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #FFFFFF;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Course Header */
+.course-details-header {
+    width: 100%;
+    padding: 65px 8%;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #8B0000,
+        #C62828,
+        #A71919
+    );
+    box-sizing: border-box;
+}
+
+.course-details-header h1 {
+    color: #FFFFFF;
+    font-size: 38px;
+    font-weight: 800;
+    margin: 0 0 15px;
+}
+
+.course-details-header p {
+    color: #FFCDD2;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Main Details Section */
+.course-details-section {
+    width: 100%;
+    padding: 65px 8%;
+    box-sizing: border-box;
+}
+
+.course-details-container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+
+/* Course Name Design */
+.course-details-name-design {
+    position: relative;
+    min-height: 280px;
+    padding: 45px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: linear-gradient(
+        135deg,
+        #5B0000,
+        #8B0000,
+        #C62828
+    );
+    box-shadow: 0 10px 30px rgba(139, 0, 0, 0.2);
+}
+
+/* Decorative Circles */
+.course-details-name-design::before,
+.course-details-name-design::after {
+    content: "";
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.course-details-name-design::before {
+    width: 220px;
+    height: 220px;
+    top: -100px;
+    right: -60px;
+}
+
+.course-details-name-design::after {
+    width: 180px;
+    height: 180px;
+    bottom: -100px;
+    left: -50px;
+}
+
+/* Academy Name */
+.course-details-academy-name {
+    position: relative;
+    z-index: 1;
+    color: #FFCDD2;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+/* Course Title */
+.course-details-name-design h2 {
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin: 0 0 22px;
+    overflow-wrap: anywhere;
+}
+
+/* Coaching Label */
+.course-details-label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 9px 22px;
+    color: #8B0000;
+    background: #FFFFFF;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* Course Content */
+.course-details-content {
+    width: 100%;
+}
+
+.course-details-content h2 {
+    color: #8B0000;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 0 20px;
+    line-height: 1.4;
+}
+
+.course-details-description {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+/* Eligibility */
+.course-eligibility {
+    padding: 22px;
+    margin-bottom: 30px;
+    background: #FFF1F2;
+    border-left: 5px solid #8B0000;
+    border-radius: 7px;
+}
+
+.course-eligibility h3 {
+    color: #8B0000;
+    font-size: 19px;
+    margin: 0 0 12px;
+}
+
+.course-eligibility p {
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Buttons Container */
+.course-details-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Enquiry Button */
+.course-enquiry-btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #8B0000;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.course-enquiry-btn:hover {
+    background: #C62828;
+    transform: translateY(-3px);
+}
+
+/* Back Button */
+.back-courses-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #FFCDD2;
+    color: #8B0000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #E5A0A5;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.back-courses-btn:hover {
+    background: #F3B2B8;
+}
+
+/* Loading and Error Messages */
+.course-details-message {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+    text-align: center;
+    color: #8B0000;
+    font-size: 18px;
+}
+
+.course-details-error {
+    color: #B00020;
+}
+
+.course-details-message a {
+    color: #8B0000;
+    font-weight: 700;
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px) {
+    .course-details-header {
+        padding: 55px 5%;
+    }
+
+    .course-details-section {
+        padding: 50px 5%;
+    }
+
+    .course-details-name-design {
+        min-height: 250px;
+    }
+
+    .course-details-name-design h2 {
+        font-size: 30px;
+    }
+
+    .course-details-content h2 {
+        font-size: 26px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .course-details-header h1 {
+        font-size: 30px;
+    }
+
+    .course-details-header p {
+        font-size: 14px;
+    }
+
+    .course-details-name-design {
+        min-height: 230px;
+        padding: 35px 20px;
+    }
+
+    .course-details-name-design h2 {
+        font-size: 27px;
+    }
+
+    .course-details-content h2 {
+        font-size: 24px;
+    }
+
+    .course-details-description {
+        font-size: 15px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .course-details-header {
+        padding: 40px 6%;
+    }
+
+    .course-details-header h1 {
+        font-size: 25px;
+    }
+
+    .course-details-section {
+        padding: 35px 6%;
+    }
+
+    .course-details-name-design {
+        min-height: 200px;
+        padding: 30px 18px;
+    }
+
+    .course-details-academy-name {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .course-details-name-design h2 {
+        font-size: 23px;
+    }
+
+    .course-details-label {
+        font-size: 10px;
+    }
+
+    .course-details-content h2 {
+        font-size: 21px;
+    }
+
+    .course-eligibility {
+        padding: 17px;
+    }
+
+    .course-details-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .course-enquiry-btn,
+    .back-courses-btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}

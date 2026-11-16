@@ -1,0 +1,412 @@
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.admin-gallery-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.admin-gallery-header h1 {
+    color: #8B0000;
+    font-size: 28px;
+    margin: 0 0 8px;
+}
+
+.admin-gallery-header p {
+    color: #777;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.admin-gallery-back-btn {
+    background: #8B0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.admin-gallery-back-btn:hover {
+    background: #C62828;
+}
+
+
+/* =========================
+   ADD GALLERY FORM
+========================= */
+
+.admin-add-gallery {
+    background: #FFFFFF;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+}
+
+.admin-add-gallery h2 {
+    color: #8B0000;
+    font-size: 21px;
+    margin: 0 0 25px;
+    padding-bottom: 13px;
+    border-bottom: 2px solid #FFCDD2;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.admin-gallery-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.admin-gallery-form-group label,
+.admin-gallery-preview label {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.admin-gallery-form-group input,
+.admin-gallery-form-group textarea,
+.admin-gallery-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    background: #FFFFFF;
+    transition: 0.3s;
+}
+
+.admin-gallery-form-group input:focus,
+.admin-gallery-form-group textarea:focus,
+.admin-gallery-form-group select:focus {
+    border-color: #C62828;
+    box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.1);
+}
+
+.admin-gallery-form-group textarea {
+    resize: vertical;
+}
+
+.admin-gallery-form-group small {
+    color: #777777;
+    font-size: 12px;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   IMAGE PREVIEW
+========================= */
+
+.admin-gallery-preview {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-gallery-preview img {
+    width: 100%;
+    max-width: 450px;
+    max-height: 280px;
+    object-fit: contain;
+    background: #FFF5F5;
+    border: 1px solid #FFCDD2;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   FORM BUTTONS
+========================= */
+
+.admin-gallery-form-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.admin-add-gallery-btn {
+    background: #8B0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-add-gallery-btn:hover {
+    background: #C62828;
+}
+
+.admin-add-gallery-btn:disabled {
+    background: #999999;
+    cursor: not-allowed;
+}
+
+.admin-gallery-cancel-btn {
+    background: #EEEEEE;
+    color: #333333;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-gallery-cancel-btn:hover {
+    background: #DDDDDD;
+}
+
+
+/* =========================
+   ERROR AND SUCCESS
+========================= */
+
+.admin-gallery-error {
+    color: #B00020;
+    background: #FFEBEE;
+    border: 1px solid #FFCDD2;
+    padding: 11px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.admin-gallery-success {
+    color: #1B5E20;
+    background: #E8F5E9;
+    border: 1px solid #A5D6A7;
+    padding: 11px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   GALLERY LIST
+========================= */
+
+.admin-gallery-list {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+.admin-gallery-list h2 {
+    color: #8B0000;
+    font-size: 21px;
+    margin: 0 0 20px;
+}
+
+.admin-gallery-empty {
+    color: #777777;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* =========================
+   TABLE WRAPPER
+========================= */
+
+.admin-gallery-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================
+   GALLERY TABLE
+========================= */
+
+.admin-gallery-table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+.admin-gallery-table th {
+    background: #8B0000;
+    color: #FFFFFF;
+    padding: 14px 12px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-gallery-table td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #EEEEEE;
+    color: #444444;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.admin-gallery-table tbody tr:hover {
+    background: #FFF5F5;
+}
+
+
+/* =========================
+   TABLE IMAGE
+========================= */
+
+.admin-gallery-table-image {
+    width: 85px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #FFCDD2;
+    background: #FFF5F5;
+}
+
+
+/* =========================
+   STATUS BUTTONS
+========================= */
+
+.gallery-status-active,
+.gallery-status-inactive {
+    border: none;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.gallery-status-active {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.gallery-status-inactive {
+    background: #FFEBEE;
+    color: #B71C1C;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.admin-gallery-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.admin-gallery-edit-btn,
+.admin-gallery-delete-btn {
+    border: none;
+    padding: 8px 13px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-gallery-edit-btn {
+    background: #FFCDD2;
+    color: #8B0000;
+}
+
+.admin-gallery-edit-btn:hover {
+    background: #EF9A9A;
+}
+
+.admin-gallery-delete-btn {
+    background: #8B0000;
+    color: #FFFFFF;
+}
+
+.admin-gallery-delete-btn:hover {
+    background: #C62828;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .admin-gallery-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-add-gallery,
+    .admin-gallery-list {
+        padding: 18px;
+    }
+
+    .admin-gallery-header h1 {
+        font-size: 23px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .admin-gallery-back-btn {
+        width: 100%;
+    }
+
+    .admin-gallery-form-buttons {
+        flex-direction: column;
+    }
+
+    .admin-add-gallery-btn,
+    .admin-gallery-cancel-btn {
+        width: 100%;
+    }
+}

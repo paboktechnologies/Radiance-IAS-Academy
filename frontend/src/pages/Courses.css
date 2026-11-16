@@ -1,0 +1,410 @@
+
+/* =========================
+   COURSES PAGE
+========================= */
+
+.courses-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   COURSES HEADER
+   Same Style as Contact Page
+========================= */
+
+.courses-header {
+    width: 100%;
+    padding: 85px 8%;
+    text-align: center;
+
+    background: linear-gradient(
+        120deg,
+        #5B0000,
+        #8B0000,
+        #C62828
+    );
+
+    box-sizing: border-box;
+}
+
+.courses-header span {
+    display: inline-block;
+    color: #FFCDD2;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.courses-header h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 15px;
+}
+
+.courses-header p {
+    max-width: 650px;
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   COURSES SECTION
+========================= */
+
+.courses-section {
+    width: 100%;
+    padding: 60px 8%;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   COURSES GRID
+========================= */
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+
+/* =========================
+   COURSE CARD
+========================= */
+
+.course-card {
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+
+    border: 1px solid #FFE4E6;
+
+    box-shadow: 0 5px 20px rgba(139, 0, 0, 0.10);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.course-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(139, 0, 0, 0.18);
+}
+
+
+/* =========================
+   COURSE NAME DESIGN
+========================= */
+
+.course-name-design {
+    width: 100%;
+    min-height: 190px;
+    padding: 25px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #8B0000,
+        #C62828,
+        #A71919
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Decorative Circle */
+
+.course-name-design::before {
+    content: "";
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+
+    top: -75px;
+    right: -35px;
+}
+
+.course-name-design::after {
+    content: "";
+    position: absolute;
+
+    width: 110px;
+    height: 110px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+
+    bottom: -60px;
+    left: -30px;
+}
+
+
+/* =========================
+   ACADEMY NAME
+========================= */
+
+.course-academy-name {
+    color: #FFCDD2;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   COURSE TITLE
+========================= */
+
+.course-name-design h2 {
+    color: #FFFFFF;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.3;
+
+    margin: 0;
+
+    position: relative;
+    z-index: 1;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   COACHING LABEL
+========================= */
+
+.course-coaching-label {
+    color: #FFCDD2;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    margin-top: 15px;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   COURSE CONTENT
+========================= */
+
+.course-content {
+    padding: 23px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.course-content p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.8;
+
+    margin: 0 0 15px;
+}
+
+
+/* =========================
+   COURSE DETAILS BUTTON
+========================= */
+
+.course-details-btn {
+    display: inline-block;
+    margin-top: auto;
+
+    padding: 12px 22px;
+
+    background-color: #8B0000;
+    color: #FFFFFF;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 6px;
+
+    transition: background-color 0.3s ease;
+}
+
+.course-details-btn:hover {
+    background-color: #C62828;
+}
+
+
+/* =========================
+   LOADING / EMPTY MESSAGE
+========================= */
+
+.courses-message {
+    text-align: center;
+    color: #8B0000;
+    font-size: 17px;
+    padding: 50px 10px;
+}
+
+.courses-error {
+    text-align: center;
+    color: #B00020;
+    font-size: 16px;
+    padding: 40px 10px;
+}
+
+
+/* =========================
+   LARGE TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+    .courses-header {
+        padding: 70px 5%;
+    }
+
+    .courses-section {
+        padding: 50px 5%;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .course-name-design {
+        min-height: 180px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .courses-header {
+        padding: 65px 6%;
+    }
+
+    .courses-header h1 {
+        font-size: 36px;
+    }
+
+    .courses-header p {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .courses-section {
+        padding: 35px 6%;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .course-name-design {
+        min-height: 175px;
+    }
+
+    .course-name-design h2 {
+        font-size: 25px;
+    }
+
+    .course-content {
+        padding: 20px;
+    }
+}
+
+
+/* =========================
+   EXTRA SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .courses-header {
+        padding: 55px 5%;
+    }
+
+    .courses-header h1 {
+        font-size: 31px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .courses-header h1 {
+        font-size: 25px;
+    }
+
+    .courses-header p {
+        font-size: 13px;
+    }
+
+    .courses-section {
+        padding: 30px 5%;
+    }
+
+    .course-name-design {
+        min-height: 160px;
+        padding: 20px 15px;
+    }
+
+    .course-name-design h2 {
+        font-size: 22px;
+    }
+
+    .course-content {
+        padding: 18px;
+    }
+
+    .course-details-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

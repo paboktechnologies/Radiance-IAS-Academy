@@ -1,0 +1,64 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Global Theme Colors */
+:root {
+    --dark-red: #8B0000;
+    --primary-red: #C62828;
+    --light-red: #FFCDD2;
+    --soft-red: #FFF1F2;
+    --white: #FFFFFF;
+    --text-dark: #333333;
+    --text-light: #666666;
+}
+
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--dark-red);
+}
+
+/* Buttons */
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Common Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Common Section */
+section {
+    padding: 60px 0;
+}
+
+/* Common Heading */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-red);
+}

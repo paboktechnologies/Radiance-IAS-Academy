@@ -1,0 +1,300 @@
+
+/* ==============================
+   MAIN NAVBAR
+============================== */
+
+.navbar {
+    width: 100%;
+    min-height: 85px;
+    padding: 12px 6%;
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(120, 0, 0, 0.12);
+}
+
+
+/* ==============================
+   LOGO
+============================== */
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.academy-logo {
+    width: 180px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+/* ==============================
+   DESKTOP NAVIGATION
+============================== */
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar-links a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #C62828;
+}
+
+/* Active Link */
+.navbar-links a.active-link:not(.admin-login-btn) {
+    color: #8B0000;
+    font-weight: 800;
+}
+
+
+/* ==============================
+   ADMIN LOGIN BUTTON
+============================== */
+
+.navbar-links .admin-login-btn {
+    background-color: #8B0000;
+    color: #FFFFFF;
+    padding: 11px 22px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.navbar-links .admin-login-btn:hover {
+    background-color: #C62828;
+    color: #FFFFFF;
+}
+
+
+/* ==============================
+   HAMBURGER BUTTON
+============================== */
+
+.hamburger-btn {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+
+    background: #FFF1F2;
+    border: 1px solid #FFCDD2;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.hamburger-btn span {
+    width: 23px;
+    height: 3px;
+    background-color: #8B0000;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+/* Hamburger to Close Animation */
+.hamburger-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 992px) {
+
+    .navbar {
+        padding: 12px 4%;
+    }
+
+    .navbar-links {
+        gap: 18px;
+    }
+
+    .navbar-links a {
+        font-size: 14px;
+    }
+
+    .academy-logo {
+        width: 100px;
+        height: 60px;
+    }
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        min-height: 75px;
+        padding: 10px 5%;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+    }
+
+    .academy-logo {
+        width: 100px;
+        height: 55px;
+    }
+
+    /* Show Hamburger Button */
+    .hamburger-btn {
+        display: flex;
+    }
+
+    /* Mobile Navigation Menu */
+    .navbar-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        padding: 0 5%;
+
+        background-color: #FFFFFF;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+
+        box-shadow: 0 8px 15px rgba(139, 0, 0, 0.12);
+
+        transition:
+            max-height 0.35s ease,
+            padding 0.35s ease,
+            visibility 0.35s ease;
+    }
+
+    /* Open Menu */
+    .navbar-links.show-menu {
+        max-height: 400px;
+        padding: 12px 5% 22px;
+        visibility: visible;
+    }
+
+    .navbar-links a {
+        width: 100%;
+        padding: 13px 10px;
+        border-bottom: 1px solid #FFE4E6;
+        font-size: 15px;
+    }
+
+    .navbar-links a:hover {
+        background-color: #FFF1F2;
+        padding-left: 18px;
+    }
+
+    /* Mobile Admin Login */
+    .navbar-links .admin-login-btn {
+        margin-top: 12px;
+        text-align: center;
+        border: none;
+        padding: 12px;
+    }
+
+    .navbar-links .admin-login-btn:hover {
+        padding-left: 12px;
+    }
+}
+
+
+/* ==============================
+   SMALL MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        min-height: 68px;
+        padding: 8px 4%;
+    }
+
+    .academy-logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .hamburger-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar-links.show-menu {
+        max-height: 400px;
+    }
+
+    .navbar-links a {
+        font-size: 14px;
+    }
+}
+
+
+/* ==============================
+   EXTRA SMALL MOBILE
+============================== */
+
+@media (max-width: 350px) {
+
+    .academy-logo {
+        width: 100px;
+        height: 45px;
+    }
+
+    .hamburger-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .navbar-links {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
