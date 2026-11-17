@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import "./Contact.css";
 import Footer from "../components/Footer";
+import API_URL from "../api";
 function Contact() {
 
     const [courses, setCourses] = useState([]);
@@ -24,7 +25,7 @@ function Contact() {
         const fetchCourses = async () => {
             try {
                 const response = await fetch(
-                    "http://localhost:5000/api/courses"
+                    `${API_URL}/courses`
                 );
 
                 const data = await response.json();
@@ -65,7 +66,7 @@ function Contact() {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/enquiries",
+               `${API_URL}/enquiries`,
                 {
                     method: "POST",
                     headers: {

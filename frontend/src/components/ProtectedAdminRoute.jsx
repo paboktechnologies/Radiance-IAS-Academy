@@ -1,8 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { Navigate, Outlet } from "react-router-dom";
-
-const API_URL = "http://localhost:5000/api";
+import API_URL from "./api";
 
 function ProtectedAdminRoute() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);

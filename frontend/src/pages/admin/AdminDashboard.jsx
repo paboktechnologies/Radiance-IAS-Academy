@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AdminDashboard.css";
+import API_URL from "../../api";
 
 function AdminDashboard() {
     const navigate = useNavigate();
@@ -25,9 +26,9 @@ function AdminDashboard() {
                     enquiryResponse,
                     popupResponse
                 ] = await Promise.all([
-                    fetch("http://localhost:5000/api/courses/admin/all", { headers }),
-                    fetch("http://localhost:5000/api/enquiries/admin/all", { headers }),
-                    fetch("http://localhost:5000/api/popups/admin/all", { headers })
+                    fetch(`${API_URL}/courses/admin/all`, { headers }),
+                    fetch(`${API_URL}/enquiries/admin/all`, { headers }),
+                    fetch(`${API_URL}/popups/admin/all`, { headers })
                 ]);
 
                 const courseData = await courseResponse.json();

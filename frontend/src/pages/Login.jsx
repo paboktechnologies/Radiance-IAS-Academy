@@ -2,8 +2,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
+import API_URL from "../api";
 
-const API_URL = "http://localhost:5000/api";
+
 
 function Login() {
     const navigate = useNavigate();

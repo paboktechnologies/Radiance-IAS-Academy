@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AdminEnquiries.css";
+import API_URL from "../../api";
 
 function AdminEnquiries() {
     const navigate = useNavigate();
@@ -19,7 +20,7 @@ function AdminEnquiries() {
             setError("");
 
             const response = await fetch(
-                "http://localhost:5000/api/enquiries/admin/all",
+                `${API_URL}/enquiries/admin/all`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -53,7 +54,7 @@ function AdminEnquiries() {
     const updateStatus = async (id, status) => {
         try {
             const response = await fetch(
-                `http://localhost:5000/api/enquiries/admin/${id}/status`,
+               `${API_URL}/enquiries/admin/${id}/status`,
                 {
                     method: "PUT",
                     headers: {

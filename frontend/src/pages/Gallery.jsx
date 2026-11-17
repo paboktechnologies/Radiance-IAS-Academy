@@ -2,8 +2,9 @@
 import { useEffect, useState } from "react";
 import "./Gallery.css";
 import Footer from "../components/Footer";
+import API_URL from "../api";
 
-const API_URL = "http://localhost:5000/api";
+
 
 function Gallery() {
     const [categories, setCategories] = useState([]);

@@ -2,8 +2,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AdminGallery.css";
+import API_URL from "../../api";
 
-const API_URL = "http://localhost:5000/api";
+
 const NEW_CATEGORY = "__new__";
 
 function AdminGallery() {

@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import "./Home.css";
+import API_URL from "../api";
+
 import AboutImage from "../assets/home.avif";
 import Student1 from "../assets/Bagavathi.png";
 import Student2 from "../assets/Sabitha.png";
@@ -25,7 +27,6 @@ import Student18 from "../assets/Prasath.png";
 import Student19 from "../assets/Mahalingam.png";
 import Student20 from "../assets/Siva Magesh.png";
 
-const API_URL = "http://localhost:5000/api";
 
 // Convert Google Drive sharing URL into Direct Image URL
 const getImageUrl = (url) => {
