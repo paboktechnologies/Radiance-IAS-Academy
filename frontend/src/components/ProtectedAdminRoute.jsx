@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { Navigate, Outlet } from "react-router-dom";
-import API_URL from "./api";
+import API_URL from "../api";
 
 function ProtectedAdminRoute() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
